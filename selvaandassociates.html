@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selva and Associates - Tax & Audit Consultant</title>
+<link rel="icon" href="images/calculate.png">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0066CC',
+secondary: '#003366'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-gray-50">
+<nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<span class="font-['Pacifico'] text-2xl text-primary">Selva and Associates</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+<a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#experience" class="text-gray-700 hover:text-primary transition-colors">Experience</a>
+<a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+</div>
+<div class="md:hidden">
+<button id="mobile-menu-toggle" class="w-6 h-6 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+<div class="px-4 py-2 space-y-2">
+<a href="#home" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+<a href="#about" class="block py-2 text-gray-700 hover:text-primary">About</a>
+<a href="#services" class="block py-2 text-gray-700 hover:text-primary">Services</a>
+<a href="#experience" class="block py-2 text-gray-700 hover:text-primary">Experience</a>
+<a href="#contact" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+</div>
+</div>
+</nav>
+<section id="home" class="min-h-screen bg-cover bg-center bg-no-repeat relative" style="background-image: url('images/background.jpg')">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">
+<div class="w-full">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+Selva and Associates
+<span class="block text-3xl md:text-4xl text-primary mt-2">Tax & Audit Consultant</span>
+</h1>
+<p class="text-xl text-gray-600 mb-8 leading-relaxed">
+Providing comprehensive audit, taxation, and financial advisory services with over 10 years of experience. Trusted by 200+ businesses across Tamil Nadu for accurate financial solutions.
+</p>
+
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+<p class="text-lg text-gray-600 mb-6">
+I am a qualified Tax & Audit Consultant with extensive experience in audit, taxation, and financial consulting. Based in Tiruppur, Tamil Nadu, I have been serving businesses of all sizes with dedication and expertise.
+</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<span class="text-gray-700">Authorized GST & Income Tax Practition</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<span class="text-gray-700">10+ Years Professional Experience</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<span class="text-gray-700">200+ Satisfied Clients</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-lg"></i>
+</div>
+<span class="text-gray-700">Expert in GST & Income Tax</span>
+</div>
+</div>
+<button class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium">
+Learn More
+</button>
+</div>
+<div class="lg:order-first">
+<img src="images/selvamani.jpeg">
+</div>
+</div>
+</div>
+</section>
+<section id="services" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Services</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Comprehensive financial and audit services tailored to meet your business needs with precision and compliance.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-file-chart-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Internal Audit</h3>
+<p class="text-gray-600 mb-6">
+Comprehensive statutory audits ensuring compliance with regulatory requirements and financial accuracy for your business.
+</p>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium text-sm">
+Learn More
+</button>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-calculator-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">GST Services</h3>
+<p class="text-gray-600 mb-6">
+Complete GST registration, return filing, compliance, and advisory services to keep your business GST-ready.
+</p>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium text-sm">
+Learn More
+</button>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-money-rupee-circle-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Income Tax</h3>
+<p class="text-gray-600 mb-6">
+Expert income tax planning, return filing, and tax optimization strategies for individuals and businesses.
+</p>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium text-sm">
+Learn More
+</button>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-building-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Company Formation</h3>
+<p class="text-gray-600 mb-6">
+Complete assistance in company incorporation, LLP formation, and all regulatory compliance requirements.
+</p>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium text-sm">
+Learn More
+</button>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-line-chart-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Financial Advisory</h3>
+<p class="text-gray-600 mb-6">
+Strategic financial planning, investment advisory, and business consultation to drive growth and profitability.
+</p>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium text-sm">
+Learn More
+</button>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-book-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Bookkeeping</h3>
+<p class="text-gray-600 mb-6">
+Accurate bookkeeping and accounting services to maintain proper financial records and ensure compliance.
+</p>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium text-sm">
+Learn More
+</button>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Over a decade of experience serving diverse industries with exceptional audit and financial services.
+</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="border-l-4 border-primary pl-6">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-semibold text-gray-900">Founder & Principal Consultant</h3>
+<span class="ml-auto text-primary font-medium">2023 - Present</span>
+</div>
+<p class="text-gray-600 mb-2">Selva & Associates, Tiruppur</p>
+<p class="text-gray-600">
+Leading the company of providing comprehensive audit, tax, and advisory services to manufacturing and textile companies in Tamil Nadu.
+</p>
+</div>
+<div class="border-l-4 border-gray-300 pl-6">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-semibold text-gray-900">Senior Audit Assistant</h3>
+<span class="ml-auto text-gray-500 font-medium">2018 - 2022</span>
+</div>
+<p class="text-gray-600 mb-2">RSRK & Assosiates, Tiruppur</p>
+<p class="text-gray-600">
+Managed multiple audit engagements for listed companies, specializing in manufacturing sector audits and regulatory compliance.
+</p>
+</div>
+<div class="border-l-4 border-gray-300 pl-6">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-semibold text-gray-900">Junior Audit Assistant</h3>
+<span class="ml-auto text-gray-500 font-medium">2017 - 2018</span>
+</div>
+<p class="text-gray-600 mb-2">RSRK & Assosiates, Tiruppur</p>
+<p class="text-gray-600">
+Conducted statutory audits, internal audits, and tax compliance for SMEs and mid-sized enterprises across various industries.
+</p>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl">
+<h3 class="text-2xl font-semibold text-gray-900 mb-6">Key Achievements</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+<span class="text-white font-bold text-sm">1</span>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">200+ Successful Clients</h4>
+<p class="text-gray-600">Completed over 200+ GST and internal audits with zero compliance issues.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+<span class="text-white font-bold text-sm">2</span>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">Tax Savings</h4>
+<p class="text-gray-600">Helped clients save over crores through strategic tax planning.</p>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
+<p class="text-xl text-gray-600">What our clients say about our services</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-white"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Dhanasekar Kumaravel</h4>
+<p class="text-gray-600 text-sm">Manufacturing Company</p>
+</div>
+</div>
+<p class="text-gray-600 italic">
+✨ "Selva and Associates has truly exceeded my expectations in every aspect of tax and audit services. Their deep expertise, tailored guidance, and outstanding client care make them a standout in the industry. I’m confident I’ve found my trusted partner for all future tax and audit matters—and I genuinely look forward to a long-term collaboration with them."
+
+
+</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-white"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Vinoth</h4>
+<p class="text-gray-600 text-sm">Export Business</p>
+</div>
+</div>
+<p class="text-gray-600 italic">
+"Selva is a remarkably young and talented professional whose commitment to quality work is truly impressive—when it comes to Audit, Tax, or Accounting services, I wholeheartedly recommend Selva and Associates for their exceptional service at a reasonable price."
+</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-white"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Manimaran</h4>
+<p class="text-gray-600 text-sm">LG Traders</p>
+</div>
+</div>
+<p class="text-gray-600 italic">
+Selva and Associates deliver outstanding audit, tax, and accounting services with a rare combination of professionalism, efficiency, and personalized care. Their young, talented team ensures high-quality results, prompt responses, and reasonable pricing. A trusted partner for all financial needs—backed by consistent excellence and genuine customer appreciation.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+<p class="text-xl text-gray-600">
+Ready to discuss your audit and taxation needs? Contact me for a consultation.
+</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-12">
+<div>
+<div class="space-y-8">
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mr-4">
+<i class="ri-map-pin-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Office Address</h3>
+<p class="text-gray-600">
+No.4,Second Floor, Subbu Complex,<br>
+Ram Nagar Main Road<br>
+Tiruppur, Tamil Nadu 641602
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mr-4">
+<i class="ri-phone-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+<p class="text-gray-600">+91 95009 86143</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mr-4">
+<i class="ri-mail-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+<p class="text-gray-600">selvaandassociates7@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mr-4">
+<i class="ri-time-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Office Hours</h3>
+<p class="text-gray-600">
+Monday - Saturday: 9:00 AM - 7:00 PM<br>
+Sunday: By Appointment
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl">
+<form  method="post" name="google-sheet">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+<input type="text" name="fullName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Your full name">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+<input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Your phone number">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+<input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="your.email@example.com">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
+<div class="relative">
+<select name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm appearance-none bg-white">
+<option value="">Select a service</option>
+<option value="Internal Audit">Internal Audit</option>
+<option value="GST Services">GST Services</option>
+<option value="Income Tax">Income Tax</option>
+<option value="Company Formation">Company Formation</option>
+<option value="Financial Advisory">Financial Advisory</option>
+<option value="Bookkeeping">Bookkeeping</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-400"></i>
+</div>
+</div>
+</div>
+
+
+
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea name="message" rows="4" maxlength="500" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Tell us about your requirements..."></textarea>
+<div class="text-xs text-gray-500 mt-1">Maximum 500 characters</div>
+</div>
+<div id="form-status" class="hidden text-center p-4 mb-4 rounded-lg"></div>
+<button type="submit" class="w-full bg-primary text-white py-3 px-6 !rounded-button whitespace-nowrap hover:bg-blue-700 transition-colors font-medium">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-secondary text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<span class="font-['Pacifico'] text-2xl">Selva and Associates</span>
+<p class="text-gray-300 mt-4">
+Professional Tax & Audit Consultant providing comprehensive audit, taxation, and financial advisory services in Tiruppur, Tamil Nadu.
+</p>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+<li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+<li><a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experience</a></li>
+<li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+<div class="space-y-2 text-gray-300">
+<p>No.4,Second Floor, Subbu Complex,</p>
+<p>Ram Nagar Main Road</p>
+<p>Tiruppur, Tamil Nadu 641602</p>
+<p>Phone: +91 95009 86143</p>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+<p>&copy; 2024 Selva and Associates. All rights reserved.</p>
+</div>
+</div>
+</footer>
+ 
+<script>
+  // ✅ Replace with your Google Apps Script Web App URL
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwY_TcxDeezmHHpZDLOinR67HzRhc6LB3O5PDuQWKFW5_yxeSmcyAv4aEixTjLaKPHrnQ/exec'; 
+  
+  // Connect the form
+  const form = document.forms['google-sheet']; 
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        const status = document.getElementById("form-status");
+        status.className = "block text-green-700 bg-green-100 p-3 rounded-lg";
+        status.textContent = "✅ Thank you! Your details have been submitted successfully.";
+        form.reset();
+      })
+      .catch(error => {
+        const status = document.getElementById("form-status");
+        status.className = "block text-red-700 bg-red-100 p-3 rounded-lg";
+        status.textContent = "❌ There was an error submitting the form.";
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+
+
+
+
+</body>
+</html>
+
